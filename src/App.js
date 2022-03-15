@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const players = ['Smith', 'Lara', 'Tendulkar', 'Shangakara'];
   var person = {
     name: "Hulk Bluster",
     job:"Smash"
@@ -23,6 +24,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>My first react app</p>
+        
         <h1 className='' style={style}>Hello hulk: {person.name + " " + person.job}</h1>
         <h2 style = {{backgroundColor:'cyan', color:'yellow'}}>Hello cap: {person2.name + " " + person2.job}</h2>
         <a
@@ -33,12 +35,12 @@ function App() {
         >
           Learn React
         </a>
-        <Person></Person>
+        <Person name = {players[2]} job="smash"></Person>
         <Person></Person>
       </header>
     </div>
   );
-  function Person() {
+  function Person(props) {
     const personStyle = {
       border: '2px solid yellow',
       margin: '10px',
@@ -46,10 +48,9 @@ function App() {
     }
     return (
       <div style={personStyle}>
-        <h1>Name: Tareque Ahmed</h1>
-        <h4>Job: Smash</h4>
-        <h2>Name: Mayan</h2>
-        <h5>Job: Thandar</h5>
+        <h1>Name: {props.name}</h1>
+        <h4>Job: {props.job}</h4>
+      
       </div>
     )
   }
