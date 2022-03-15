@@ -33,9 +33,26 @@ function App() {
         >
           Learn React
         </a>
+        <Person></Person>
+        <Person></Person>
       </header>
     </div>
   );
+  function Person() {
+    const personStyle = {
+      border: '2px solid yellow',
+      margin: '10px',
+      padding: '20px'
+    }
+    return (
+      <div style={personStyle}>
+        <h1>Name: Tareque Ahmed</h1>
+        <h4>Job: Smash</h4>
+        <h2>Name: Mayan</h2>
+        <h5>Job: Thandar</h5>
+      </div>
+    )
+  }
 }
 
 export default App;
