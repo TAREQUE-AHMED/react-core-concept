@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.friend{
+  background-color: aquamarine;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+.person4{
+  background-color: #61dafb;
+  border:2px solid red;
+  padding: 20px;
+  border-radius:20px ;
+  margin: 20px;
+}
